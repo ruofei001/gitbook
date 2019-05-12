@@ -1,0 +1,10 @@
+stages:
+  - refresh
+
+build:
+  stage: refresh
+  script: 
+   - cd /home/wiki
+   - git pull
+  only:
+    - master
