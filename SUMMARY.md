@@ -24,6 +24,8 @@
 	* [node常用工具](服务端/node/node常用工具/index.md)
 * mysql
 	* [mysql](服务端/mysql/常用命令.md)
+* egg
+	* [mysql](服务端/egg/index.md)
 * 阿里云
 	* [ali云](服务端/阿里云/ali云.md)
 
