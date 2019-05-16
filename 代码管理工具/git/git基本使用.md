@@ -7,6 +7,12 @@ git config --global user.email xxx
 ```
 
 #### 基本命令
+* git branch   ： 查看当前分支(*的为当前分支)
+* git branch aaa   ： 创建本地分支 aaa
+* git push origin xxx   ： 把本地分支aaa提交到远程仓库 xxx
+* git branch -a   ： 查看远程仓库有几个分支
+* git branch -D xxx   ： 删除分支(本地)
+* git checkout xxx   ： 切换到远程分支xxx
 * git checkout -b xxx   ： 创建分支并切换到分支xxx
 * git status  ： 查看当前分支状态
 * git add . : 将新添加的文件加入暂存区
@@ -17,6 +23,7 @@ git config --global user.email xxx
 * git add filename : 添加未跟踪的文件到暂存区
 * git add . : 添加所有未跟踪的文件到暂存区
 * git log : 日志
+* git远程覆盖本地文件 : git fetch --all     git reset --hard origin/<branch_name>
 
 #### 使用合并流程
 1. [master下]创建分支: `git checkout -b xxx`
@@ -33,6 +40,16 @@ git config --global user.email xxx
 建议采用git-flow规范：
 1. 新项目，新功能： feature/xxx
 2. 快速更改，修复bug: hotfix/xxx
+
+#### git迁移
+```
+git clone http://gitlab.taoche.com/mendian/MendianShow
+cd MendianShow
+git remote rename origin old-origin
+git remote add origin http://git.taoche.com/mendian/MendianShow
+git push origin --all
+git push origin --tags
+```
 
 #### 注意事项
 1. windows下客户端: sourcetree(注册需翻墙), tortoiseGit, mac下客户端: sourcetree, tower
