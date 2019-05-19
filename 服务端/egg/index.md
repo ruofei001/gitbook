@@ -1,3 +1,7 @@
+>注意事项：
+1. 项目dev启动时，数据库必须是可连接的
+
+>学习过程
 #### 一、先按照[快速开始](https://eggjs.org/zh-cn/intro/quickstart.html)撸一遍
 #### 二、安装mysql
 - 按照菜鸟教程安装mysql数据库
@@ -6,7 +10,7 @@ port:3306
 密码：123456（:tIKlS>y<3Dq）
 安装路径：C:\\mysql 
 ```
-- 以管理员身份打开mysql/bin文件，执行相关命令
+- 以管理员身份打开mysql/bin文件，执行相关命令 
 ```
 //mysql启动
 net start mysql
