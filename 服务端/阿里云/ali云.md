@@ -20,3 +20,15 @@
 - 点击操作中的 “解析”
 - 点击 “添加记录”
 - 记录 类型选择--cname,主机记录--www,记录值--外网访问的 Bucket 域名
+
+## 将项目传到对象存储上（第一版）
+
+- 打开对象存储 tab 项
+- 新建存储空间 wtt-vue，此时生成外网可访问的 Bucket 域名（这个域名只能下载文件）
+- 在 域名管理 tab 中配置域名，就是可以配置 cname 那种域名 www.familytour.cn
+- 在 基础设置 中，读写权限-->公共读，静态页面-->index.html
+- 在 文件管理 中将打包好的项目文件传上来，目前就是直接使用页面的文件上传功能，并且不能上传文件夹
+  > 解决不能上传文件夹问题，阿里云提供了工具,https://help.aliyun.com/document_detail/61872.html
+  - AccessKeyId:LTAIsIymrMRoxiO6,AccessKeySecret:Wr8Jz1b6DkPWY6coLE6Yi2jHKevIRy
+- 此时打包注意要配上 publicPath 为当前存储空间对应的域名 'http://www.familytour.cn/'
+- 访问 http://www.familytour.cn，页面成功显示
