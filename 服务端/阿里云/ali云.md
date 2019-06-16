@@ -21,7 +21,7 @@
 - 点击 “添加记录”
 - 记录 类型选择--cname,主机记录--www,记录值--外网访问的 Bucket 域名
 
-## 将项目传到对象存储上（第一版）
+## 将项目传到对象存储上,应用以文件形式访问
 
 - 打开对象存储 tab 项
 - 新建存储空间 wtt-vue，此时生成外网可访问的 Bucket 域名（这个域名只能下载文件）
@@ -32,3 +32,18 @@
   - AccessKeyId:LTAIsIymrMRoxiO6,AccessKeySecret:Wr8Jz1b6DkPWY6coLE6Yi2jHKevIRy
 - 此时打包注意要配上 publicPath 为当前存储空间对应的域名 'http://www.familytour.cn/'
 - 访问 http://www.familytour.cn，页面成功显示
+
+## 服务器安装软件
+
+- [node](https://www.linuxidc.com/Linux/2018-05/152389.htm)
+- [nginx](https://www.cnblogs.com/yzeng/p/9077619.html)
+
+## 软件安装遇到的问题
+
+- [centOS 遇到 can not allocate memory 问题](https://blog.csdn.net/ArimaKisho/article/details/81737815)
+
+## centos 常用命令
+
+- 删除：rm /home/test // 这种不带参数的删除方法经常会提示无法删除，因为权限不够。
+- 删除：rm -r /home/test // -r 是递归的删除参数表中的目录及其子目录
+- 删除：rm -rf /home/test // f 是不提示用户，删除目录下的所有文件。请注意检查路径，输成别的目录就悲剧了
