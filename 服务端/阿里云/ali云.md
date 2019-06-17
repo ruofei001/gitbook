@@ -38,6 +38,15 @@
 - [node](https://www.linuxidc.com/Linux/2018-05/152389.htm)
 - [nginx](https://www.cnblogs.com/yzeng/p/9077619.html)
 
+## nginx 常用操作
+
+- 查看 nginx 配置是否正确 nginx -t
+- 查看 nginx 是否启动成功 ps -ef | grep nginx
+- 杀掉所有 nginx 进程 killall -9 nginx
+- 查看端口占用情况 lsof -i :80
+- 查看开放的所有端口 netstat -a
+- 检查服务器对应的端口是否放开 telnet + ip + port #如: telnet 172.31.114.32 80 // #没有 telnet 命令使用：yum install telnet 安装后使用。
+
 ## 软件安装遇到的问题
 
 - [centOS 遇到 can not allocate memory 问题](https://blog.csdn.net/ArimaKisho/article/details/81737815)
@@ -47,3 +56,6 @@
 - 删除：rm /home/test // 这种不带参数的删除方法经常会提示无法删除，因为权限不够。
 - 删除：rm -r /home/test // -r 是递归的删除参数表中的目录及其子目录
 - 删除：rm -rf /home/test // f 是不提示用户，删除目录下的所有文件。请注意检查路径，输成别的目录就悲剧了
+
+* [CentOS 如何查看端口是被哪个应用/进程占用](https://www.cnblogs.com/mracale/p/5786831.html)
+* [CentOS 查看进程、杀死进程、启动进程等常用命令](https://www.cnblogs.com/aipiaoborensheng/p/7676364.html)
