@@ -40,12 +40,23 @@
 
 ## nginx 常用操作
 
+- 启动 nginx
+- 停止 nginx -s quit
+- 重载加载配置 nginx -s reload
 - 查看 nginx 配置是否正确 nginx -t
 - 查看 nginx 是否启动成功 ps -ef | grep nginx
 - 杀掉所有 nginx 进程 killall -9 nginx
 - 查看端口占用情况 lsof -i :80
-- 查看开放的所有端口 netstat -a
+- 查看开放的所有端口 netstat -tlunp
 - 检查服务器对应的端口是否放开 telnet + ip + port #如: telnet 172.31.114.32 80 // #没有 telnet 命令使用：yum install telnet 安装后使用。
+- 对外开放 80 端口
+  - [centos7 查看端口是否开放](https://jingyan.baidu.com/article/9113f81b4713252b3214c788.html)
+  - [CentOS 7 中 firewall-cmd 命令](https://www.jianshu.com/p/411274f96492)
+  1. 检查 firewalld 防火墙，对外暴露的端口 iptables-save，在最下边会看到相关信息
+  2. 添加端口 80： firewall-cmd --zone=public --add-port=80/tcp --permanent
+  3. 重载防火墙 firewall-cmd --reload
+  4. 如果此时报错，防火墙被关闭了：FirewallD is not running
+  5. 打开防火墙，再执行上边命令 systemctl start firewalld.service
 
 ## 软件安装遇到的问题
 
