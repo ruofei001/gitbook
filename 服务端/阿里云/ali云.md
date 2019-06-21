@@ -57,6 +57,9 @@
   3. 重载防火墙 firewall-cmd --reload
   4. 如果此时报错，防火墙被关闭了：FirewallD is not running
   5. 打开防火墙，再执行上边命令 systemctl start firewalld.service
+- 展示 CentOS7 虚拟机对外暴露的端口，实际对外暴露的端口
+  1. 检查 nmap 安装情况 rpm -qa | grep nmap
+  2. 使用 nmap 扫描 nmap 172.31.114.32
 
 ## 软件安装遇到的问题
 
