@@ -15,7 +15,10 @@
     "*.vue": "html"
 }
 ```
-##### [vscode terminal 快捷键（清屏）失效](https://blog.csdn.net/jianleking/article/details/84339124)
+##### vscode terminal 快捷键清屏
+```
+cmd和powershell下：cls 回车
+```
 ##### 函数参数注释
 - 1、安装插件Document This 
 - 2、将光标放置于function上面，快捷键是 Ctrl+Alt+D 加 Ctrl+Alt+D
