@@ -1,5 +1,8 @@
 ### 常用设置
 
+##### 插件安装
+- [参考一](https://blog.csdn.net/shenxianhui1995/article/details/81604818)
+- bookmark
 
 ##### Terminal配置成gitBash 
 - terminal.integrated.shell.windows
