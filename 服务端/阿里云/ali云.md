@@ -73,3 +73,7 @@
 
 * [CentOS 如何查看端口是被哪个应用/进程占用](https://www.cnblogs.com/mracale/p/5786831.html)
 * [CentOS 查看进程、杀死进程、启动进程等常用命令](https://www.cnblogs.com/aipiaoborensheng/p/7676364.html)
+
+## rsync
+
+rsync -avzP root@172.31.114.32::Public ~/sass-helper
