@@ -59,4 +59,5 @@ myEgg\app\model\user.js
 ```
 #### [实现 RESTful API](https://eggjs.org/zh-cn/tutorials/restful.html)
 #### 鉴权
+#### 跨域设置(https://www.cnblogs.com/MrLee/p/10727701.html)
 
